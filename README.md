@@ -19,39 +19,39 @@ Ask technical questions and get concise, referenced answers from ChaiCode docume
 
 ### 1. Clone the repository
 
-bash
+```bash
 git clone https://github.com/LakshayJ17/rag-chaidocs.git
 cd rag-chaidocs
-
+```
 
 ### 2. Install dependencies
 
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 ### 3. Configure API Keys
 
-- Fill in your keys in .env:
-    
+- Fill in your keys in `.env`:
+    ```
     OPENAI_API_KEY=your-openai-api-key
     PINECONE_API_KEY=your-pinecone-api-key
-    
+    ```
 - **Never commit your real .env file!**
 
 ### 4. Index the Documentation (One-time setup)
 
 This will fetch and embed ChaiCode Docs into Pinecone.
 
-bash
+```bash
 python indexing.py
-
+```
 
 ### 5. Run the Chatbot App
 
-bash
+```bash
 streamlit run chat.py
-
+```
 
 ---
 
@@ -79,7 +79,7 @@ streamlit run chat.py
 - Optimized for Streamlit Cloud compatibility.
 
 ### .gitignore
-- Ensures .env and venv/ are not committed.
+- Ensures `.env` and `venv/` are not committed.
 
 ---
 
